@@ -1,15 +1,14 @@
 name: Pytest Workflow
-
-# FIX 1: 'run-nam' changed to 'run-name'
 run-name: Pytest
 
 on:
   push:
+    # This section now correctly only uses 'branches'
     branches:
       - main
       - 'releases/**'
-    branches-ignore:
-     - dev
+  
+  # The other triggers are fine
   label:
     types:
       - created
@@ -22,7 +21,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
-    # FIX 2: Correct placement for working-directory
     defaults:
       run:
         working-directory: ./MLOPS_Lab3/Github_Lab/Lab1
