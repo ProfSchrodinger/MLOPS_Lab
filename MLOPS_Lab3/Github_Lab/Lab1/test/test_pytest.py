@@ -1,5 +1,3 @@
-# test/test_pytest.py
-
 from src.text_analyzer import count_words, count_characters, count_sentences, analyze_text
 
 def test_count_words():
@@ -11,7 +9,7 @@ def test_count_words():
 def test_count_characters():
     """Test the character count function."""
     assert count_characters("Hello") == 5
-    assert count_characters("Hello world") == 11 # spaces are counted
+    assert count_characters("Hello world") == 11
     assert count_characters("") == 0
 
 def test_count_sentences():

@@ -1,5 +1,3 @@
-# src/text_analyzer.py
-
 import re
 
 def count_words(text):
@@ -19,7 +17,6 @@ def count_sentences(text):
     """Counts the number of sentences based on ., !, ? delimiters."""
     if not isinstance(text, str):
         return 0
-    # Use regex to find sentence-ending punctuation
     sentences = re.findall(r'[^.!?]+[.!?]', text)
     return len(sentences)
 

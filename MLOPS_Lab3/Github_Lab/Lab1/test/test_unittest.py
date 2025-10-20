@@ -1,5 +1,3 @@
-# test/test_unittest.py
-
 import unittest
 from src.text_analyzer import count_words, count_characters, count_sentences, analyze_text
 
