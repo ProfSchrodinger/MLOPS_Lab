@@ -1,0 +1,57 @@
+name: Pytest Workflow
+run-nam: Pytest
+on:
+  push:
+    branches:
+      - main
+      - 'releases/**'
+    branches-ignore:
+     - dev
+
+  label:
+    types:
+      - created
+  issues:
+    types:
+      - opened
+      - labeled
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # Add this line to run all steps inside your project folder
+    working-directory: ./MLOPS_Lab3/Github_Lab/Lab1
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.9
+
+    # This step will now run inside .../Lab1/ and find requirements.txt
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    # This step will now run inside .../Lab1/ and find your tests
+    - name: Run tests and generate XML report
+      run: pytest --junitxml=pytest-report.xml
+      continue-on-error: false
+
+    # This step will now find the report generated in the working directory
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: pytest-report.xml
+
+    - name: Notify on success
+      if: success()
+      run: echo "Tests passed successfully"
+
+    - name: Notify on failure
+      if: failure()
+      run: echo "Tests failed"
