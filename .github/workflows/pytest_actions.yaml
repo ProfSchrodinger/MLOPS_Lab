@@ -40,7 +40,6 @@ jobs:
 
     - name: Upload test results
       if: always()
-      # FIX: Updated from v2 to v4
       uses: actions/upload-artifact@v4
       with:
         name: test-results
