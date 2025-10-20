@@ -3,12 +3,9 @@ run-name: Pytest
 
 on:
   push:
-    # This section now correctly only uses 'branches'
     branches:
       - main
       - 'releases/**'
-  
-  # The other triggers are fine
   label:
     types:
       - created
@@ -43,7 +40,8 @@ jobs:
 
     - name: Upload test results
       if: always()
-      uses: actions/upload-artifact@v2
+      # FIX: Updated from v2 to v4
+      uses: actions/upload-artifact@v4
       with:
         name: test-results
         path: pytest-report.xml
