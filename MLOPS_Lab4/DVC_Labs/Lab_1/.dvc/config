@@ -1,0 +1,5 @@
+[core]
+    remote = remotelocation
+['remote "remotelocation"']
+    url = gs://mlops-lab4-dvc
+    credentialpath = /Users/sabarimathavan/Downloads/Northeastern/IE7374_MLOps/MLOPS_Lab/MLOPS_Lab4/DVC_Labs/Lab_1/secrets/mlops-lab-secret.json
