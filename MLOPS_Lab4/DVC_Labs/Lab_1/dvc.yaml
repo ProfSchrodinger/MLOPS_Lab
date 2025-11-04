@@ -1,2 +1,5 @@
 metrics:
   - metrics.json
+
+plots:
+  - metrics.json
