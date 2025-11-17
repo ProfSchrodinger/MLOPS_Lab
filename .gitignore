@@ -3,3 +3,4 @@ __pycache__/
 .pytest_cache/
 secrets/
 **/.DS_Store
+.ipynb_checkpoints
