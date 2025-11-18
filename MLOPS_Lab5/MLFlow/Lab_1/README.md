@@ -48,7 +48,7 @@ Send a POST request to http://127.0.0.1:5002/invocations with patient data (JSON
 <br> Example Python Client:
 ```bash
 import requests
-url = '[http://127.0.0.1:5002/invocations](http://127.0.0.1:5002/invocations)'
+url = 'http://127.0.0.1:5002/invocations'
 data = {"dataframe_split": test_data.to_dict(orient='split')}
 response = requests.post(url, json=data)
 print(response.json())
