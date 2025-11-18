@@ -1,0 +1,10 @@
+artifact_location: file:///Users/sabarimathavan/Downloads/Northeastern/IE7374_MLOps/MLOPS_Lab/MLOPS_Lab5/MLFlow/Lab_1/mlruns/0/models/m-914683f99c1f4fc49f877787fd3b5936/artifacts
+creation_timestamp: 1763424866771
+experiment_id: '0'
+last_updated_timestamp: 1763424869228
+model_id: m-914683f99c1f4fc49f877787fd3b5936
+model_type: null
+name: heart_disease_multiclass
+source_run_id: 8ed8bb4f4ece427285d9ecb6387eeb00
+status: 2
+status_message: null

@@ -1,0 +1,15 @@
+creation_timestamp: 1763425110036
+current_stage: Production
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1763425138036
+model_id: m-311f8ac6ccaf4b30bfcbafc2b731d9cd
+name: heart_disease_multiclass_production
+run_id: 942a1bc779fd403d873aec9ef78c4c44
+run_link: null
+source: models:/m-311f8ac6ccaf4b30bfcbafc2b731d9cd
+status: READY
+status_message: null
+storage_location: file:///Users/sabarimathavan/Downloads/Northeastern/IE7374_MLOps/MLOPS_Lab/MLOPS_Lab5/MLFlow/Lab_1/mlruns/0/models/m-311f8ac6ccaf4b30bfcbafc2b731d9cd/artifacts
+user_id: null
+version: 1

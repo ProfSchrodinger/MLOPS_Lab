@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/sabarimathavan/Downloads/Northeastern/IE7374_MLOps/MLOPS_Lab/MLOPS_Lab5/MLFlow/Lab_1/mlruns/0/8ed8bb4f4ece427285d9ecb6387eeb00/artifacts
+end_time: 1763424869275
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8ed8bb4f4ece427285d9ecb6387eeb00
+run_name: multiclass_neural_network
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763424866692
+status: 3
+tags: []
+user_id: sabarimathavan
